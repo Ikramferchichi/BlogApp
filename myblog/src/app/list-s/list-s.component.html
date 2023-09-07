@@ -1,0 +1,18 @@
+<div class="row">
+  <div *ngFor="let sweet of sweets" class="card mt-5" style="width:18rem;margin-left:10px;">
+      <img width="200px" height="250px" [src]="sweet.Img" class="card-img-top" alt="sweet">
+      <div class="card-body">
+        <h5 class="card-title">{{sweet.Name}}</h5>
+        <p class="card-text">{{sweet.Recette}}</p>
+       
+      </div>
+      
+    
+    <div class="btns">
+      <button (click)="Deletesweet(sweet._id)" class="btn btn-sm btn-outline-success text-success">Delete</button>
+       <button [routerLink]="['/updateS' , sweet._id]" class="btn btn-sm btn-outline-success text-success">Update</button>
+    </div>
+  </div>
+   
+  
+          

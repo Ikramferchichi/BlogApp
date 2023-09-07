@@ -1,0 +1,18 @@
+<div class="row mt-5">
+    <div class="col-3 mt-3">
+        <input type="text" name="name" [(ngModel)]="newsweet.Name" class="form-control"  placeholder="Name">
+    </div>
+    <div class="col-3 mt-3">
+        <input type="text"  name="categ"  [(ngModel)]="newsweet.Categ"  class="form-control"  placeholder="Categorie">
+    </div>
+    <div class="col-3 mt-3">
+        <input type="text"  name="sweet"  [(ngModel)]="newsweet.Recette"  class="form-control"  placeholder="Recette">
+    </div>
+    <div class="col-3 mt-3">
+        <input type="text" name="image"   [(ngModel)]="newsweet.Img"  class="form-control"  placeholder="Image">
+    </div>
+    <div class="col-3 mt-3">
+        <input type="button" (click)="Ajoutersweet()" class="btn btn-sm btn-outline-success text-success"  value="Add">
+    </div>
+
+</div>

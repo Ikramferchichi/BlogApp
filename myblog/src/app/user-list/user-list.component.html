@@ -1,0 +1,19 @@
+
+  <table class="table">
+    <thead>
+      <tr>
+        
+        <th class="text-success" scope="col">Email</th>
+        <th class="text-success" scope="col">Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        
+        <td>{{ user.Email }}</td>
+        <td>{{ user._id }}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  

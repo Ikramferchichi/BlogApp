@@ -1,0 +1,33 @@
+
+<!-- Sing in  Form -->
+<section class="sign-in">
+    <div class="container">
+        <div class="signin-content">
+            <div class="signin-image">
+                <figure><img src="https://fatsecretfrance.fr/wp-content/uploads/2022/01/Pancakes-healthy-22Fluffy22-aux-pe%CC%81pites-de-chocolat.png" alt="sing up image"></figure>
+                <a routerLink="/signup" class="text-success signup-image-link">Create an account</a>
+            </div>
+
+            <div class="signin-form">
+                <h2 class="form-title text-success">Sign in</h2>
+                <form method="POST" class="register-form" id="login-form">
+                    <div class="form-group">
+                        <label for="your_Email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" [(ngModel)]="signin.Email" name="email" placeholder="Your Email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password" [(ngModel)]="signin.Password" name="password" placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                        <label for="remember-me" class="text-success label-agree-term"><span><span></span></span>Remember me</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" (click)="Ajoutersignin()" name="signin" id="signin" class=" btn btn-sm btn-outline-success text-success" value="Log in"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
